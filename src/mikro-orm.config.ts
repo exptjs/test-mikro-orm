@@ -17,7 +17,8 @@ const configDb: Options = {
     tableName: 'list_migrations',
     path: './dist/migrations',
     pathTs: './src/migrations',
-    glob: '!(*.d).{js,ts}'
+    glob: '!(*.d).{js,ts}',
+    disableForeignKeys: false
   },
   ignoreUndefinedInQuery: true,
   extensions: [EntityGenerator, Migrator, SeedManager],
